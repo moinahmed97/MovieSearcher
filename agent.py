@@ -1,14 +1,13 @@
 from __future__ import annotations as _annotations
 
-from dotenv import load_dotenv
+
 from dotenv import load_dotenv
 import os
 
 load_dotenv()  # Load environment variables from .env file
 
-# Access the API key
-openai_api_key = os.getenv('OPENAI_API_KEY')
-load_dotenv()
+
+
 
 from pydantic_ai import Agent, RunContext
 from agent_tools import query_streaming_availability
