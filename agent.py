@@ -16,7 +16,7 @@ openai_api_key = os.getenv('OPENAI_API_KEY')
 
 agent = Agent(
     'openai:gpt-4o',
-    system_prompt='You are a helpful assistant that provides the streaming availability of movies and TV shows and information about the cast and crew.',
+    system_prompt='You are a helpful assistant that provides the streaming availability of movies and TV shows and information about the cast and main crew.',
 )
 
 @agent.tool

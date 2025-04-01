@@ -62,5 +62,5 @@ async def test_special_characters_title():
     """Test titles with special characters"""
     mock_response = "Available on Disney+"
     with patch('agent_tools.query_streaming_availability', new=AsyncMock(return_value=mock_response)):
-        result = await check_streaming_availability(None, "Loki: Season 2")
+        result = await check_streaming_availability(None, "Loki: Season 1")
         assert "Disney+" in result
