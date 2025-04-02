@@ -28,4 +28,4 @@ async def query_streaming_availability(title: str) -> str:
     if availability:
         return f"{title} is available on {', '.join(availability.get('services', []))}."
     else:
-        return f"{title} is not available on any streaming services."
+        return f"{title} is not available on any streaming services. We are sorry :)"
